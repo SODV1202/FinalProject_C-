@@ -57,7 +57,7 @@ namespace Connect4Game
 
               //Receive user input
 
-Console.WriteLine("Player First please enter your name: ");
+Console.WriteLine("First Player please enter your name: ");
 
               //Store player First's name
 
@@ -69,7 +69,7 @@ Console.WriteLine("Player First please enter your name: ");
 
               //Receiving user input
 
-Console.WriteLine("Player Second please enter your name: ");
+Console.WriteLine("Second Player please enter your name: ");
 
               //Store player 2 Name
 
@@ -191,7 +191,7 @@ CheckBellow( board, playerSecond, playerdropChoice );
 
                         //Display message and restart board
 
-Console.WriteLine( "The board is lfull, it is a draw!" );
+Console.WriteLine( "The board is full, it is a draw!" );
 
                         playagain = restart(board);
 
@@ -385,7 +385,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
                         //Check whether 4 are connected
 
-                        if( board[li , lix] == XO     &&
+                        if( board[li , lix] == XO &&
 
                         board[li-1 , lix-1] == XO &&
 
@@ -403,7 +403,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
                         //Check whether 4 are connected
 
-                        if( board[li , lix] == XO   &&
+                        if( board[li , lix] == XO &&
 
                         board[li , lix-1] == XO &&
 
@@ -421,7 +421,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
                         //Check whether 4 are connected      
 
-                        if( board[li , lix] == XO   &&
+                        if( board[li , lix] == XO &&
 
                         board[li-1 , lix] == XO &&
 
@@ -439,7 +439,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
                         //Check whether 4 are connected
 
-                        if( board[li , lix] == XO     &&
+                        if( board[li , lix] == XO &&
 
                         board[li-1 , lix+1] == XO &&
 
@@ -457,7 +457,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
                         //Check whether 4 are connected      
 
-                        if ( board[li , lix] == XO   &&
+                        if ( board[li , lix] == XO &&
 
                         board[li , lix+1] == XO &&
 
@@ -529,7 +529,7 @@ static int CheckFour ( char[,] board, playerInfo activePlayer )
 
               //Display message
 
-Console.WriteLine( activePlayer.playerName + " Connected Four, You Win!" );
+Console.WriteLine( activePlayer.playerName + " connected four, you won!" );
 
           }
 
@@ -545,7 +545,7 @@ Console.WriteLine( activePlayer.playerName + " Connected Four, You Win!" );
 
               //Display message for restart
 
-Console.WriteLine("Would you like to restart? Yes(1) No(2): ");
+Console.WriteLine("Would you like to restart? Yes(1) or No(2): ");
 
               //Store input
 
